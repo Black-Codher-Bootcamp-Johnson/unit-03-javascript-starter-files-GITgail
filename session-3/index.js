@@ -5,7 +5,8 @@ const b = 10;
 let c = a + b;
 a = 20;
 c = a + b;
-function sayHey () {
+
+function sayHey() {
     console.log("Hey!");
 }
 sayHey();
@@ -15,3 +16,9 @@ function conversation() {
     console.log("Googbye");
 }
 conversation();
+
+function futureAge(name, currentAge) {
+  let futureAge = currentAge + 5
+  return "Hi " + name + " you will be " + futureAge + " in 5 years " 
+}
+console.log(futureAge("gail",50));
