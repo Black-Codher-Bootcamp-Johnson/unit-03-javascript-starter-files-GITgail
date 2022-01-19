@@ -5,3 +5,13 @@ const b = 10;
 let c = a + b;
 a = 20;
 c = a + b;
+function sayHey () {
+    console.log("Hey!");
+}
+sayHey();
+function conversation() {
+    sayHey();
+    console.log("How are you?");
+    console.log("Googbye");
+}
+conversation();
