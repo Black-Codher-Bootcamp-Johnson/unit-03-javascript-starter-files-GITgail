@@ -1,5 +1,12 @@
 // ****************************************************TASK 1****************************************************
 
+const animals = [ 'cat', 'dog', 'cow', 'chicken', 'fox', 'horse'];
+console.log(animals)
+const animal = animals.pop()  
+animals.pop();
+
+console.log(animals)
+
 
 
 
@@ -16,8 +23,13 @@
 
 // ****************************************************TASK 2****************************************************
 
+const names = [ 'Job', 'Zeinab', 'Jenny', 'Kai', 'Naomi', 'Alex', 'Namiko', 'Daniella', 'Michael', 'Tobby'];
+console.log(names)
+const name = names.sort()
+names.sort()
 
-
+const name2 = names.sort().reverse()
+console.log(names)  
 
 
 
