@@ -1,0 +1,26 @@
+From f7f27bd278483d77f4eee8e636f2fc113be98a62 Mon Sep 17 00:00:00 2001
+From: Genyus <genyus@gmail.com>
+Date: Thu, 3 Feb 2022 03:14:36 +0000
+Subject: [PATCH] fix: fixed compare function
+
+---
+ session-7/index.js | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+diff --git a/session-7/index.js b/session-7/index.js
+index c43aec1..2d1db90 100644
+--- a/session-7/index.js
++++ b/session-7/index.js
+@@ -39,8 +39,5 @@ const people = [
+ // You should pass this function to the sort method to sort the ages of each individiual in the people array of objects
+ // Note: this helper function is using a tertiary operator instead of an if/else statement
+ function compare(a, b) {
+-  const personA = a.age;
+-  const personB = b.age;
+-
+-  return personA > personB ? true : false;
++  return a.age - b.age;
+ }
+-- 
+2.32.0 (Apple Git-132)
+

@@ -20,7 +20,6 @@ console.log(animals)
 
 
 
-
 // ****************************************************TASK 2****************************************************
 
 const names = [ 'Job', 'Zeinab', 'Jenny', 'Kai', 'Naomi', 'Alex', 'Namiko', 'Daniella', 'Michael', 'Tobby'];
@@ -31,6 +30,13 @@ names.sort()
 const name2 = names.sort().reverse()
 console.log(names)  
 
+
+//   BONUS  //
+const numbers = [5, 325, 67, 100000, 150];
+console.log('numbers before sorting: ', numbers);
+
+numbers.sort();
+console.log('numbers after sorting: ', numbers);
 
 
 
@@ -54,5 +60,9 @@ function compare(a, b) {
   const personA = a.age;
   const personB = b.age;
 
-  return personA > personB ? true : false;
+  return a.age - b.age;
 }
+
+const sortedPeople = people.sort(compare); 
+console.log('Sorted people:', sortedPeople);
+    
